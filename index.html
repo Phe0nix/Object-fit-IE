@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Pranab">
+	<title>Object-fit-IE Demo</title>
+	<link rel="stylesheet" href="demo.min.css">
+</head>
+
+<body>
+	<h1>Object-fit-IE Demo</h1>
+	<p>View this page in IE for the difference of using and without using JS.</p>
+	<div class="content">
+		<div class="first">
+			<div class="image">
+				<img src="image/1.jpg" alt="1" class="img1">
+				<p class="txt">without js</p>
+			</div>
+			<div class="image img">
+				<img src="image/1.jpg" alt="1" class="img1">
+				<p class="txt">with js</p>
+			</div>
+		</div>
+		<div class="second">
+			<div class="image">
+				<img src="image/2.jpg" alt="2" class="img2">
+				<p class="txt">without js</p>
+			</div>
+			<div class="image img">
+				<img src="image/2.jpg" alt="2" class="img2">
+				<p class="txt">with js</p>
+			</div>
+		</div>
+	</div>
+	<script src="object-fit-ie.min.js" type="text/javascript"></script>
+	<script>
+		ObjectFitIE.ieImg('.img', 'left', 'center', 'none')
+	</script>
+</body>
+
+</html>
