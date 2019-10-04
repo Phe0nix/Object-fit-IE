@@ -1,5 +1,5 @@
 # object-fit-ie
-object-fit polyfill only for images (video still in progress) in IE. Every other browsers (Chrome, Safari, Firefox, Opera, Edge) supported 'object-fit' property. It help to fit the image into the containers.
+object-fit polyfill only for images in IE. Every other browsers (Chrome, Safari, Firefox, Opera, Edge) supported 'object-fit' property. It help to fit the image into the containers.
 
 ### Demo - https://phe0nix.github.io/object-fit-IE/
 
