@@ -1,7 +1,7 @@
 # object-fit-ie
 object-fit polyfill only for images in IE. Every other browsers (Chrome, Safari, Firefox, Opera, Edge) supported 'object-fit' property. It help to fit the image into the containers.
 
-### Demo - https://phe0nix.github.io/object-fit-IE/
+### Demo - [Demo Link](https://phe0nix.github.io/object-fit-ie/)
 
 ### This is only built for IE due to no support of `object-fit` css property.
 It support from version 9. Below 9, still in progress.
