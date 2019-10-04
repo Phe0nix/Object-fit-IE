@@ -24,5 +24,8 @@ It will target the `.wrapper` class. Make sure, within the wrapper only one imag
 
 ### Usage
 1. include the `js` file in your codebase.
-2. call this before `</body>` - `objectFitIE.ieImg('image wrapper-name', 'object-position x', 'object-position y', 'object-fit')`;
+2. call this before `</body>` -
+```js
+objectFitIE.ieImg('image wrapper-name', 'object-position x', 'object-position y', 'object-fit');
+```
 3. and see it in IE.
