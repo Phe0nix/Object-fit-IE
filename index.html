@@ -6,20 +6,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Pranab">
-	<title>Object-fit-IE Demo</title>
+	<title>object-fit-IE Demo</title>
 	<link rel="stylesheet" href="demo.css">
 </head>
 
 <body>
-	<h1>Object-fit-IE Demo</h1>
-	<p>View this page in IE for the difference of using and without using JS.</p>
+	<h1>object-fit-IE Demo</h1>
+	<p class="para"></p>
 	<div class="content">
+		<div class="values">
+			<span>object-fit: </span>
+			<select name="objectFitValues" id="objectFitWrapper">
+				<option value="cover" selected>Cover</option>
+				<option value="contain">Contain</option>
+				<option value="fill">Fill</option>
+				<option value="none">None</option>
+				<option value="scale-down">Scale-down</option>
+			</select>
+			<span>object-position-x: </span>
+			<select name="objectPosXValues" id="objectPosXWrapper">
+				<option value="left" selected>Left</option>
+				<option value="center">Center</option>
+				<option value="right">Right</option>
+			</select>
+			<span>object-position-y: </span>
+			<select name="objectPosYValues" id="objectPosYWrapper">
+				<option value="top">Top</option>
+				<option value="center" selected>Center</option>
+				<option value="bottom">Bottom</option>
+			</select>
+		</div>
 		<div class="first">
 			<div class="image">
 				<img src="image/1.jpg" alt="1" class="img1">
 				<p class="txt">without js</p>
 			</div>
 			<div class="image img">
+				<p class="txt top">
+					object-fit: <span class="fit"></span><br>
+					object-position: <span class="x"></span> <span class="y"></span>
+				</p>
 				<img src="image/1.jpg" alt="1" class="img1">
 				<p class="txt">with js</p>
 			</div>
@@ -30,15 +56,17 @@
 				<p class="txt">without js</p>
 			</div>
 			<div class="image img">
+				<p class="txt top">
+					object-fit: <span class="fit"></span><br>
+					object-position: <span class="x"></span> <span class="y"></span>
+				</p>
 				<img src="image/2.jpg" alt="2" class="img2">
 				<p class="txt">with js</p>
 			</div>
 		</div>
 	</div>
 	<script src="object-fit-ie.js" type="text/javascript"></script>
-	<script>
-		objectFitIE.ieImg('.img', 'left', 'center', 'cover')
-	</script>
+	<script src="demo.js"></script>
 </body>
 
 </html>
